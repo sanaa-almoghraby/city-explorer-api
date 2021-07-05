@@ -35,7 +35,7 @@ try {
     })
 
 } catch {
-    res.status(404).send('incorect name')
+    res.status(500).send('incorect name')
 }
 
 
