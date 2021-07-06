@@ -30,3 +30,11 @@ Start time: _____
 Finish time: _____
 
 Actual time needed to complete: _____
+
+
+
+
+https://api.themoviedb.org/3/search/movie?api_key={api_key}&query=Jack+Reacher
+
+
+https://api.weatherbit.io/v2.0/forecast/daily?city=Raleigh,NC&key=API_KEY
