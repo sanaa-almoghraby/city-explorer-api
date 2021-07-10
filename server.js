@@ -14,12 +14,15 @@ server.use(cors());
 
 const weathers = require('./weather.js');
 const moviemodl=require('./movies.js');
-console.log(weathers);
+// server.get('/yalpInfo',handleryalp);
+const handleryalp=require('./yalp.js');   //=========
+// console.log(weathers);
 // ========================================================================
 server.get('/getCityInfo', weathers.handlerWeather);
 server.get('/moviedata',moviemodl.handlerMovie);
-
-
+// ==========================================================================
+// localhost:3001/yalpInfo?cityOFrestaurant=Amman
+server.get('/yalpInfo',handleryalp);
 
 
 
